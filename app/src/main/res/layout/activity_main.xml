@@ -9,7 +9,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/zero"
         android:orientation="vertical"
         android:layout_weight="3"
         android:padding="10dp"
@@ -19,19 +19,19 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre"
+            android:hint="@string/ingrese_su_nombre"
             android:inputType="textPersonName"
             />
         <EditText
             android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su teléfono"
+            android:hint="@string/ingrese_su_tel_fono"
             android:inputType="phone"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Escolaridad"
+            android:text="@string/escolaridad"
             android:textColor="#000"
             />
         <Spinner
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Género"
+            android:text="@string/g_nero"
             android:textColor="#000"/>
         <RadioGroup
             android:id="@+id/radios"
@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Fémenino"
+                android:text="@string/f_menino"
                 />
             <RadioButton
                 android:id="@+id/masculino"
@@ -64,24 +64,24 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masculino"/>
+                android:text="@string/masculino"/>
         </RadioGroup>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Libro favorito"
+            android:text="@string/libro_favorito"
             android:textColor="#000"/>
         <AutoCompleteTextView
             android:id="@+id/libros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingresa tu libro favorito"
+            android:hint="@string/ingresa_tu_libro_favorito"
             />
         <CheckBox
             android:id="@+id/deporte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Practica deporte"/>
+            android:text="@string/practica_deporte"/>
     </LinearLayout>
 
 
@@ -89,7 +89,7 @@
         android:id="@+id/limpiar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Limpiar"
+        android:text="@string/limpiar"
         android:layout_gravity="bottom"
         />
 

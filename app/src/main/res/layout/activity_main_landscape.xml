@@ -9,87 +9,88 @@
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/zero"
         android:orientation="vertical"
         android:layout_weight="3"
         android:padding="10dp"
         >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zero"
+                android:orientation="vertical"
+                android:layout_weight="@dimen/tres"
+                android:padding="10dp"
+                >
 
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingrese_su_nombre"
+                    android:inputType="textPersonName"
+                    />
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingrese_su_tel_fono"
+                    android:inputType="phone"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/escolaridad"
+                    android:textColor="#000"
+                    />
+                <Spinner
+                    android:id="@+id/escolaridad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/escolaridad">
 
+                </Spinner>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_nero"
+                    android:textColor="#000"/>
+                <RadioGroup
+                    android:id="@+id/radios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/femenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/f_menino"
+                        />
+                    <RadioButton
+                        android:id="@+id/masculino"
+                        android:layout_weight="1"
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre"
-            android:inputType="textPersonName"
-            />
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ingrese su teléfono"
-            android:inputType="phone"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Escolaridad"
-            android:textColor="#000"
-            />
-        <Spinner
-            android:id="@+id/escolaridad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/escolaridad">
-
-        </Spinner>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Género"
-            android:textColor="#000"/>
-        <RadioGroup
-            android:id="@+id/radios"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/femenino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Fémenino"
-                />
-            <RadioButton
-                android:id="@+id/masculino"
-                android:layout_weight="1"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Masculino"/>
-        </RadioGroup>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Libro favorito"
-            android:textColor="#000"/>
-        <AutoCompleteTextView
-            android:id="@+id/libros"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ingresa tu libro favorito"
-            />
-        <CheckBox
-            android:id="@+id/deporte"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Practica deporte"/>
-        </LinearLayout>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/masculino"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/libro_favorito"
+                    android:textColor="#000"/>
+                <AutoCompleteTextView
+                    android:id="@+id/libros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingresa_tu_libro_favorito"
+                    />
+                <CheckBox
+                    android:id="@+id/deporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/practica_deporte"/>
+            </LinearLayout>
     </ScrollView>
 
 
@@ -97,7 +98,7 @@
         android:id="@+id/limpiar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Limpiar"
+        android:text="@string/limpiar"
         android:layout_gravity="bottom"
         />
 
