@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:windowSoftInputMode="adjustResize|stateVisible">
-        <activity android:name=".ActivityMain">
+        >
+        <activity android:name=".ActivityMain"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
