@@ -8,19 +8,29 @@ public class Alumno {
     String nombre;
     String telefono;
     String escolaridad;
-    int escolaridad_index;
     boolean male;
     String librofavorito;
-    int libro_index;
     boolean deporte;
-    public Alumno(String nombre,String telefono, String escolaridad, int escolaridad_index, boolean male, String librofavorito, int libro_index, boolean deporte){
+    public Alumno(String nombre,String telefono, String escolaridad, boolean male, String librofavorito, boolean deporte){
         this.nombre = nombre;
         this.telefono = telefono;
         this.escolaridad = escolaridad;
-        this.escolaridad_index = escolaridad_index;
         this.male = male;
         this.librofavorito = librofavorito;
-        this.libro_index = libro_index;
         this.deporte = deporte;
+    }
+
+    @Override
+    public String toString() {
+        String res = "";
+        res += "Nombre: "+nombre+"\n";
+        res += "Telefono: "+telefono+"\n";
+        res += "Escolaridad: "+escolaridad+"\n";
+        String genero = (male)?"Masculino":"Femenino";
+        res += "Género: "+genero+"\n";
+        res += "Libro favorito: "+librofavorito+"\n";
+        if(deporte)
+            res += "Practica Deporte \n";
+        return res;
     }
 }
