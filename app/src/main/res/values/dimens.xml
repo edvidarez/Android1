@@ -2,4 +2,5 @@
 <resources>
     <dimen name="zero">0dp</dimen>
     <dimen name="tres">3dp</dimen>
+    <dimen name="ten">10dp</dimen>
 </resources>
